@@ -106,23 +106,24 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-             <button onclick="submit" type="submit" id="submit">Login</button>
-            <script>
-                function submit() {
-                    window.location.href = "add-meds.html"; // Redirect to page1.html
-                }
-            </script>
+            <button type="button" onclick="submitForm()">Login</button>
         </form>
 
         <div class="button-container">
-            <button onclick="redirectToPage12()">Not a User</button>
+            <button onclick="redirectToRegister()">Not a User</button>
         </div>
     </div>
 
 
     <script>
-        function redirectToPage12() {
-            window.location.href = "register.html"; // Redirect to page1.html
+        function submitForm() {
+            // You can add login validation here
+            // For now, just redirect to add-meds.html
+            window.location.href = "add-meds.html";
+        }
+
+        function redirectToRegister() {
+            window.location.href = "register.html";
         }
     </script>
 
