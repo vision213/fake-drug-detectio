@@ -106,7 +106,12 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" id="submit">Login</button>
+             <button onclick="submit" type="submit" id="submit">Login</button>
+            <script>
+                function submit() {
+                    window.location.href = "add-meds.html"; // Redirect to page1.html
+                }
+            </script>
         </form>
 
         <div class="button-container">
